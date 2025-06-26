@@ -54,21 +54,21 @@
 </head>
 
 <body class="m-0">
-    <div class="container items-center relative">
-        <header class=" md:flex justify-between items-center h-full w-full relative">
+    <div class="container">
+        <header class="flex justify-between items-center ">
             <div class="">
-                <img class="relative top-3" src="/assets/Logo.png" alt="logo">
+                <img class="" src="/assets/Logo.png" alt="logo">
             </div>
-            <div class="justify-around items-center flex w-3/5 gap-30">
+            <div class="hidden md:justify-around items-center md:flex md:w-3/5 md:gap-30">
                 <nav class="">
-                    <ul class="flex gap-8 font-primary text-md ">
+                    <ul class="flex gap-8 font-primary text-md">
                         <li><a href="">Home</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Courses</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
                 </nav>
-                <div class="">
+                <div>
                     <img class="" src="assets/icon-nav.png" alt="">
                 </div>
                 <div class="flex items-center  gap-4 ">
@@ -77,10 +77,15 @@
                         class="bg-linear-[120deg,#083F9B_0%,#7F56D9_100%] w-34 h-15 text-white border rounded-lg p-4 ">Signup</button>
                 </div>
             </div>
+            <div class="md:hidden">
+                <span class="material-symbols-outlined text-7xl mx-6">
+                    menu
+                </span>
+            </div>
         </header>
         <section
-            class="grid grid-cols-2  w-full h-auto bg-linear-to-b from-herostart to-heroend bg-linear-br from-heroend to-herostart bg-center relative">
-            <div class="flex absolute text-white top-75 right-110 ">
+            class="flex flex-col md:grid md:grid-cols-2  md:w-full md:h-auto bg-linear-to-b from-herostart to-heroend bg-linear-br from-heroend to-herostart bg-center ">
+            <div class="hidden md:flex md:absolute text-white top-75 right-110 ">
                 <div class="p-2 mt-2">
                     <img src="assets/element.png" alt="" class="h-32">
                 </div>
@@ -91,15 +96,17 @@
                     <p class="text-sky-600 font-semibold">4.9</p>
                 </div>
             </div>
-            <div class="flex flex-col mx-12 justify-evenly items-start px-4 py-3 relative">
+            <div
+                class="text-center m-6 md:text-left md:flex md:flex-col md:mx-12 md:justify-evenly md:items-start md:px-4 md:py-3 ">
                 <div>
-                    <p class="text-white text-2xl mx-2 my-3 ">Successful coaches are visionaries</p>
-                    <h2 class="text-7xl text-white font-normal font-primary leading-21">Good <span
-                            class="text-blue-800">coaching</span> is good teaching & nothing else.</h2>
+                    <p class="text-white text-2xl mx-8 md:ml-6  md:text-2xl md:mx-2 md:my-3 ">Successful coaches are
+                        visionaries</p>
+                    <h2 class="text-6xl mx-6 my-10 md:text-7xl text-white font-primary md:leading-21">Good <span
+                            class="text-blue-600 md:text-blue-800">coaching</span> is good teaching & nothing else.</h2>
                 </div>
 
                 <div>
-                    <ul class="flex gap-4">
+                    <ul class="flex justify-center md:flex md:gap-4 md:ml-6">
                         <li>
                             <a href="#" class="px-6 py-3 border-2 border-white rounded-lg text-white font-semibold">View
                                 Courses</a>
@@ -111,18 +118,18 @@
                 </div>
 
                 <div
-                    class="flex justify-evenly bg-white border border-white border-1 border-opacity-30 rounded-lg w-140 relative">
+                    class="flex justify-between my-8 mx-5 px-1 py-2  md:justify-evenly bg-white border border-white border-1 border-opacity-30 rounded-lg md:w-140">
 
                     <input type="text" placeholder="What do you want to learn today?"
-                        class="w-128 onclick:border-none px-7">
+                        class="px-3 md:w-128 onclick:border-none md:px-7">
                     <button
-                        class="flex gap-4 w-auto m-2 text-white px-14 py-4 border rounded-lg bg-linear-[120deg,#083F9B_0%,#7F56D9_100%]"><span
+                        class="px-2 py-1 flex md:gap-4 md:w-auto md:m-2 text-white md:px-14 md:py-4 border rounded-lg bg-linear-[120deg,#083F9B_0%,#7F56D9_100%]"><span
                             class="material-symbols-outlined">
                             search
                         </span>Search</button>
                 </div>
             </div>
-            <div class="flex justify-center items-center py-3 relative">
+            <div class="hidden md:flex md:justify-center md:items-center md:py-3 ">
 
                 <div class="flex justify-center items-center w-400 ">
                     <img src="assets/Ellipse (2).png" class="absolute border-none w-190 h-260">
@@ -165,13 +172,14 @@
                 <img src="assets/amazon.png" alt="">
             </div>
         </div>
-        <section class="bg-blue-50 p-5 pt-15 relative">
-            <img src="assets/round ele.png" class="absolute top-13 left-50">
+        <section class="bg-blue-50 md:p-5 pt-15 pb-10 relative">
+            <img src="assets/round ele.png" class="absolute md:top-13 md:left-50 left-8 top-3">
             <div class="text-center tracking-wider text-2xl ">
-                <h4 class="font-rowdy text-2xl m-3">Featured <span class="text-blue-500">Course</span></h4>
-                <p class="font-semibold">The feature courses are we invented our teaching part</p>
+                <h4 class="font-rowdy mb-5 md:text-2xl md:m-3 text-4xl">Featured <span
+                        class="text-blue-500">Course</span></h4>
+                <p class="font-semibold text-lg md:text-2xl">The feature courses are we invented our teaching part</p>
             </div>
-            <div class="grid grid-cols-3 grid-rows-2 gap-5 p-8 font-secondary p-18">
+            <div class="grid grid-cols-2 md:grid-cols-3 md:grid-rows-2 md:gap-5 md:p-8 font-secondary md:p-18">
                 <div class="m-4 bg-white rounded-2xl">
                     <img src="assets/Mask group.png" alt="">
                     <div class="flex justify-between m-2 p-2">
@@ -195,7 +203,7 @@
                         <p>9,575 Students</p>
                         <p>01h 59m</p>
                     </div>
-                    <h5 class="font-secondary font-semibold text-wrap m-2 p-2 text-2xl text-textcol">Advance PHP
+                    <h5 class="font-secondary font-semibold text-wrap md:m-2 p-2 text-2xl text-textcol">Advance PHP
                         knowledge with JS to
                         make smart web</h5>
                     <div class="flex justify-between m-2 p-2 font-semibold text-gray-600">
@@ -277,22 +285,22 @@
             </div>
         </section>
         <section
-            class="bg-linear-to-bl from-indigo-700 to-indigo-300 bg-linear-to-tl from-indigo-700 to-indigo-300 bg-linear-to-b from-indigo-700 to-indigo-400 text-center py-15 relative">
+            class="bg-linear-to-bl from-indigo-700 to-indigo-300 bg-linear-to-tl from-indigo-700 to-indigo-300 bg-linear-to-b from-indigo-700 to-indigo-400 text-center py-6 md:py-15 relative">
             <div class="border border-white w-80 h-70 absolute top-10 right-320 rounded-full rounded-l-none">
                 <div class="border border-white w-60 h-50 absolute top-10 rounded-full rounded-l-none border-dashed">
                     <div class="border border-white w-40 h-30 absolute top-10 rounded-full rounded-l-none">
                     </div>
                 </div>
             </div>
-            <h3 class="font-primary text-white text-3xl tracking-wider p-2 pt-16">Why <span
+            <h3 class="font-primary text-white text-5xl md:text-3xl md:tracking-wider p-2 pt-16">Why <span
                     class="text-blue-700">learn</span> with our courses?</h3>
             <p class="font-secondary text-white font-thin text-lg">We are providing the best courses and top classes.And
                 <br>
                 extradinery placement training.....
             </p>
-            <div class="flex justify-center gap-50 m-12 ">
+            <div class="flex md:justify-center md:gap-50 md:m-12 my-5 ">
                 <div
-                    class="text-white font-primary flex flex-col justify-center items-center border-r-1 pr-25 border-dashed">
+                    class="text-white font-primary flex flex-col justify-center items-center md:border-r-1 pr-25 border-dashed">
                     <img src="assets/Icon.png" alt="">
                     <h5 class="m-4">01. Learn</h5>
                     <p>Learn continually. There is always <br>
@@ -305,7 +313,7 @@
                         be your best.</p>
                 </div>
                 <div
-                    class="text-white font-primary flex flex-col justify-center items-center border-l-1 pl-25 border-dashed">
+                    class="text-white font-primary flex flex-col justify-center items-center md:border-l-1 pl-25 border-dashed">
                     <img src="assets/Icon (2).png" alt="">
                     <h5 class="m-4">03. Work</h5>
                     <p>Great companies are built in <br>
@@ -315,9 +323,9 @@
             </div>
         </section>
         <section class="bg-linear-to-t from-sky-100 to-white  font-primary text-center p-15 pb-20">
-            <h3 class="text-2xl ">Top <span class="text-blue-700">Categories</span> </h3>
+            <h3 class="text-4xl mb-3 md:text-2xl ">Top <span class="text-blue-700">Categories</span> </h3>
             <p class="text-md">100+ unique online course list designs</p>
-            <div class="flex justify-evenly font-primary pt-15 gap-5">
+            <div class="grid grid-cols-2 md:flex justify-evenly font-primary pt-15 gap-5">
                 <div class="flex flex-col gap-8 bg-white p-12 rounded-2xl">
                     <img src="assets/div.features-box-image.png" alt="">
                     <h5 class="text-[20px] text-sky-950">Digtal
@@ -358,46 +366,48 @@
                 </div>
             </div>
         </section>
-        <section class="justify-center flex m-25 relative">
-            <img src="assets/Polygon 8.png" alt="" class="absolute bottom-0 left-2">
-            <img src="assets/Polygon 8.png" alt="" class="absolute w-15 h-15 top-8 left-145">
+        <section class="hidden md:flex md:justify-center flex m-25 relative">
+            <img src="assets/Polygon 8.png" alt="" class="md:absolute md:bottom-0 md:left-2">
+            <img src="assets/Polygon 8.png" alt="" class="md:absolute md:w-15 md:h-15 md:top-8 md:left-145">
             <div
-                class="m-6 w-300 h-80 flex justify-center items-center font-primary text-center bg-linear-to-bl from-[#E441FF]/100 via-[#1901F8]/56 to-[#00B3FF]/30 text-white rounded-xl">
-                <img src="assets/Ellipse 168.png" alt="" class="absolute left-25 top-15">
-                <img src="assets/Ellipse 167.png" alt="" class="absolute left-55 ">
-                <img src="assets/Ellipse 166.png" alt="" class="absolute left-35 bottom-15">
-                <img src="assets/Ellipse 166 (1).png" alt="" class="absolute right-25 top-15">
-                <img src="assets/Ellipse 167 (1).png" alt="" class="absolute right-35 ">
-                <img src="assets/Ellipse 168 (1).png" alt="" class="absolute right-20 bottom-15">
+                class="m-6 w-300 h-80 flex justify-center items-center font-primary text-center bg-linear-to-bl from-[#E441FF]/100 via-[#1901F8]/56 to-[#00B3FF]/30 text-white rounded-xl relative">
+                <div class="">
+                    <img src="assets/Ellipse 168.png" alt="" class="md:absolute md:left-25 md:top-15">
+                    <img src="assets/Ellipse 167.png" alt="" class="md:absolute md:left-55 ">
+                    <img src="assets/Ellipse 166.png" alt="" class="md:absolute md:left-35 md:bottom-15">
+                    <img src="assets/Ellipse 166 (1).png" alt="" class="md:absolute md:right-25 md:top-15">
+                    <img src="assets/Ellipse 167 (1).png" alt="" class="md:absolute md:right-35 ">
+                    <img src="assets/Ellipse 168 (1).png" alt="" class="md:absolute md:right-20 md:bottom-15">
+                </div>
                 <div class="w-120">
                     <h3 class="text-4xl">Subscribe For Get Update
                         Every New Courses</h3>
                     <p class="my-6 font-secondary text-xs">20k+ students daily learn with Eduvi. Subscribe for new
                         courses.</p>
                     <div class="rounded-lg m-6 flex justify-between pl-4 bg-slate-50/10">
-                        <input type="text" placeholder="enter your email" class="text-slate-200">
+                        <input type="text" placeholder="enter your email" class="text-slate-200 md:w-128">
                         <button
                             class="bg-blue-700 px-6 py-4 text-white rounded-lg rounded-l-none text-xs">Subscribe</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="relative p-16 mt-50">
-            <img src="assets/Polygon 7.png" class="absolute right-10 bottom-210">
-            <div class="flex justify-center items-center relative">
+        <section class="hidden md:flex md:justify-center md:relative md:p-16 md:mt-50">
+            <img src="assets/Polygon 7.png" class="md:absolute md:right-10 md:bottom-210">
+            <div class="md:flex justify-center items-center relative">
                 <img src="assets/Rectangle.png" alt="">
                 <img src="assets/Group 512857.png" alt="" class="absolute">
             </div>
-            <img src="assets/banner_right.png.png" class="absolute bottom-13 right-8">
+            <img src="assets/banner_right.png.png" class="md:absolute bottom-13 right-8">
         </section>
-        <section class="font-primary bg-linear-to-t from-blue-100 to-blue-50/10 pb-30">
-            <img src="assets/Ellipse 1217.png" class="absolute left-20">
+        <section class="md:font-primary md:bg-linear-to-t md:from-blue-100 to-blue-50/10 pb-30">
+            <img src="assets/Ellipse 1217.png" class="hidden md:absolute left-20">
             <div class="text-center">
-                <h3 class="text-blue-800  text-2xl m-4">Testimonials</h3>
+                <h3 class=" text-blue-800  text-2xl m-4">Testimonials</h3>
                 <p class="text-sm">What our student say about us</p>
             </div>
 
-            <div class="flex justify-between px-12 items-center mt-20 relative">
+            <div class="md:flex justify-between px-12 items-center mt-20 relative">
                 <div class="bg-white relative mt-30 p-6 w-130 mb-8 px-12 shadow-xl">
                     <img src="assets/th (1) 4.png" class="absolute left-60 bottom-40">
                     <p class="mb-6 mt-6">Such an amazing traniner and easily understand the entire
@@ -412,7 +422,7 @@
                     <img src="assets/Group 1000014987.png" alt="">
                 </div>
                 <div
-                    class="bg-white border border-blue-50 m-30 p-6 w-130 absolute mb-8 left-95 bottom-20 px-12 shadow-xl">
+                    class="hidden md:block md:bg-white border border-blue-50 m-30 p-6 w-130 absolute mb-8 left-95 bottom-20 px-12 shadow-xl">
                     <img src="assets/th (1) 4.png" class="absolute left-60 bottom-40">
                     <p class="mb-6 mt-6">Such an amazing traniner and easily understand the entire
                         syllabus, and the guidence will be super and good to the way of explaning.</p>
@@ -420,34 +430,43 @@
                 </div>
 
             </div>
+            <div class="flex justify-center gap-2 md:justify-end m-4">
+                <button class="flex justify-center text-blue-700 rounded-full border-2 border-blue-700"><span
+                        class="material-symbols-outlined">
+                        arrow_back
+                    </span></button>
+                <button class="flex justify-center text-blue-700 rounded-full border-2 border-blue-700 rotate-180"><span class="material-symbols-outlined">
+                        arrow_back
+                    </span></button>
+            </div>
         </section>
         <section class=" bg-linear-to-bl from-[#477AE3] to-[#931BBD]/85">
             <div class="flex justify-around font-primary p-4 items-center">
                 <div class="w-80 ">
-                    <h4 class="m-8 text-2xl">Connect</h4>
+                    <h4 class="md:m-8 md:text-2xl">Connect</h4>
                     <img src="assets/Askmeidentity 1.png" class="mix-blend-multiply relative right-10">
                     <p class="text-[#000000] text-[15px] font-secondary">Sri Jagannath Nivas,8-1-164/345/A/1,
                         Pragati Colony, Mailardevpally, Nawab
                         Saheb Kunta, Hyd, 500005</p>
                 </div>
-                <div class="flex flex-col gap-3">
-                    <h2 class="text-3xl">Classes</h2>
+                <div class="hidden md:flex flex-col gap-3">
+                    <h2 class="md:text-3xl">Classes</h2>
                     <p>Classroom courses</p>
                     <p>Virtual classroom courses</p>
                     <p>E-learning courses</p>
                     <p>Video Courses</p>
                     <p>Offline Courses</p>
                 </div>
-                <div class="flex flex-col gap-3">
-                    <h2 class="text-3xl">Community</h2>
+                <div class="hidden md:flex flex-col gap-3">
+                    <h2 class="md:text-3xl">Community</h2>
                     <p>Learners</p>
                     <p>Parteners</p>
                     <p>Developers</p>
                     <p>Transactions</p>
                     <p>Blog</p>
                 </div>
-                <div class="flex flex-col gap-3 relative top-3">
-                    <h2 class="text-3xl">Quick links</h2>
+                <div class="hidden md:flex flex-col gap-3 relative top-3">
+                    <h2 class="md:text-3xl">Quick links</h2>
                     <p>Home</p>
                     <p>Professional Education</p>
                     <p>Courses</p>
@@ -456,7 +475,7 @@
                     <p>Programs</p>
                 </div>
                 <div class="flex flex-col gap-3 relative top-2">
-                    <h2 class="text-3xl">More</h2>
+                    <h2 class="md:text-3xl">More</h2>
                     <p>Press</p>
                     <p>Investors</p>
                     <p>Terms</p>
@@ -472,7 +491,8 @@
                 <img src="assets/LinkedIn.png" class="bg-white p-2 rounded-full">
                 <img src="assets/YouTube.png" class="bg-white p-2  rounded-full">
             </div>
-            <p class="text-white p-2 bg-[#001AFF]/20 text-center">Copyright @ 2023 askmeidentity. All Rights Reserved</p>
+            <p class="text-white p-2 bg-[#001AFF]/20 text-center">Copyright @ 2023 askmeidentity. All Rights Reserved
+            </p>
         </section>
     </div>
 </body>
